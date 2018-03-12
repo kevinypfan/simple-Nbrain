@@ -1,0 +1,13 @@
+node_modules/
+*.pdf
+*.mp4
+/config/*.json
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+mergeFile/*
+!carousel
+!uploads
+!mergeFile
+!allTeamData
