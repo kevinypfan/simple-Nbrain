@@ -25,7 +25,13 @@ var SystemSchema = new mongoose.Schema({
   },
   registrationEnd: {
     type: String
-  }
+  },
+  trialStart: {
+    type: String
+  },
+  trialEnd: {
+    type: String
+  },
   gamePath: {
     type: String
   },

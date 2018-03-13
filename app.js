@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 
 const userRoutes = require("./api/routes/user");
 const teamRoutes = require("./api/routes/team");
+const systemRoutes = require("./api/routes/system");
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URL);
@@ -36,6 +37,7 @@ app.use((req, res, next) => {
 
 app.use('/api/user', userRoutes);
 app.use('/api/team', teamRoutes);
+app.use('/api/system', systemRoutes);
 
 app.use((req, res, next) => {
   const error = new Error("Not found");

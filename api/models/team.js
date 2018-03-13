@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const teamSchema = mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
   teamName: {
     type: String,
     trim: true,
@@ -17,11 +16,8 @@ const teamSchema = mongoose.Schema({
     trim: true
   },
   teacher: {
-    name: {
-      type: String,
-      trim: true,
-      required: true
-    }
+    type: String,
+    required: true
   },
   leader: {
     name: {
